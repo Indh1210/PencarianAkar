@@ -1,0 +1,57 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+ 
+
+```{r}
+f <- function(x) {
+  x^3 + 4 * x^2 - 10
+}
+
+
+curve(f, xlim=c(0,3), col='blue', lwd=1, lty=2)
+abline(h=0)
+abline(v=0)
+
+curve(f1)
+```
+
+```{r}
+bisection(f, 1, 2)
+
+```
+
+
+```{r}
+fp <- Deriv(f)
+fp
+
+```
+
+```{r}
+newton(f, fp, 1.5)
+
+```
+
+```{r}
+f <- function(x) {
+  sqrt(x)-cos(x)
+}
+
+curve(f, xlim=c(0,2))
+abline(h=0)
+abline(v=0)
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+
